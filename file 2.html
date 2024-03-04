@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        alert("Hi developers !!");
+
+        var a = 10;
+        var b = 20;
+
+        if(a>b){
+            alert(a + " - A is greater");
+        } else { 
+            alert(b + " - B is greater");
+        }
+
+        confirm("Do you like our website");
+        if(a){
+            alert("Thanks !");
+        } else {
+            alert("Sorry !");
+        }
+
+        var aa = prompt("What is your name? ");
+        document.write(aa);
+
+        function f1(){ //NANR
+             console.log("First function!");
+             var a = 100;
+             var b = 50;
+             var c = a + b;
+             console.log("sum = " + c);
+        }
+        f1();
+
+        function f2(){ //NAWR
+            var a = 190;
+            var b = 200;
+            var c = a + b;
+            return c;
+        }
+
+        var d = f2();
+        console.log("Sum = " + d);
+
+        function f3(a,b){ //WANR
+            var c = a + b;
+            console.log("Sum = " + c);
+        }
+        f3(20,30);
+
+        function f4(a,b){
+            var c = a + b
+            return c;
+        }
+        var e = f4(2,2);
+        console.log("Sum = " + e);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

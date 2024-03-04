@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script>
+        var a = [10,20,30,40,50]
+
+        document.write(a[3]+ "<hr/>");
+        document.write(a + "<hr/>");
+
+        var sum=0;
+        for (var i=0; i<=4; i++){
+            document.write(a[i]+ "<br/>")
+            sum = sum+a[i];
+        }
+        document.write("Sum = " + sum + "<hr/>");
+//-----------------------------------------------------------------
+        var a = new Array();
+        a[0] = 10;
+        a[1] = "abc";
+        a[2] = true;
+
+        document.write(a + "<hr/>");
+
+//----------------------------------------------------------------
+        // var a = new Array(4);
+
+        // for(var i = 0; i<=4; i++){
+        //     a[i] = prompt("Enter the value = ")
+        // }
+        // document.write(a);
+//----------------------------------------------------------------
+        var d = [
+            ["Sakshi", "female", "MCA <br/>"],
+            ["Sakshi2", "female", "MCA <br/>"],
+            ["Sakshi3", "female", "MCA <br/>"]
+        ]
+        document.write(d + "<hr/>");
+
+        for(var b=0; b<3; b++){
+            for(var c=0; c<3
+            ; c++){
+                document.write(d[b][c] + " ");
+            }
+            document.write("<br/>");
+        }
+        document.write("<hr/>")
+//-----------------------------------------------------------------
+        document.write("<table border='1px'>")
+        for(var b=0; b<d.length; b++){
+            for(var c=0; c<d.length; c++){
+                document.write("<td>" + d[b][c] + "<td/>");
+            }
+            document.write("<tr/>");
+            document.write("<br/>");
+        }
+        document.write("</Table> <hr/>");
+//-----------------------------------------------------------------
+        var aa = [90,80,20,30,40,50,1,5]; // sort functions work for string based data, not with numbers
+        var bb = ["Sanjay","Aman","Rahman","Karan"];
+
+        document.write(aa + "<br/>");
+        delete aa[1];
+        aa.sort();
+        document.write(aa + "<br/>");
+        document.write(bb + "<br/>");
+        bb.push("Priya", "Sakshi");
+        bb.sort();
+        document.write(bb + "<br/>");
+
+        bb.pop();
+        document.write(bb + "<br/>");
+
+        bb.shift();
+        document.write(bb + "<br/>");
+
+        bb.unshift("Arun");
+        document.write(bb + "<br/>");
+
+        var cc = ["ab", "bc", "cd", "ef"];
+        var dd = bb.concat(cc);
+        document.write(dd + "<br/>");
+
+
+        var ff = bb.slice(-3,-1);        
+        document.write(ff + "<br/>");
+        var ee = bb.slice(0,3);        
+        document.write(ee + "<br/>");
+
+//------------------------------------------------------------------
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

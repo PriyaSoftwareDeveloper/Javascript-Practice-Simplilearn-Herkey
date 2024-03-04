@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = ["Ram", "Kumar", "25", "India"];
+
+        var b = {
+            fname : "Ram",
+            lname : "Kumar",
+            age : 25,
+            country : "India",
+            number: ["9842288816","8072559485"],
+            salary: function(){
+                return 20000;
+            },
+            fullname: function(){
+                return this.fname+this.lname;
+            }
+            
+        }
+        console.log(a);
+        console.log(b);
+        document.write(a + "<br/> <hr/>");
+        // document.write(b.lastname);
+        document.write(b.number + "<br/> <hr/>");
+        document.write(b.salary() + "<br/> <hr/>");
+        document.write(b.fullname() + "<br/> <hr/>");
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

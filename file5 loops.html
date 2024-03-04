@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - for loop</title>
+    <script>
+//-----------------------------------------------------------------
+        for(i=1; i<=10; i++){
+            console.log(i + ". Simpli learn!");
+        }
+//-----------------------------------------------------------------
+        for(i=1; i<=10; i++){
+            document.write(i + ". Simpli learn! <br/>");
+        }
+        document.write("<hr/>");
+//-----------------------------------------------------------------
+        for(k=10; k>=1; k--){
+            document.write(k + ". Simpli learn!" + "<br/>");
+        }
+        document.write("<hr/>");
+//-----------------------------------------------------------------
+        for(l=1;l<=10;l++){
+            document.write(l + " x 5 = " + l*5 + "<br/>");
+        }
+        document.write("<hr/>");
+//-----------------------------------------------------------------
+        var n = 7;
+        var t = 0;
+        for(var i=1; i<=10; i++){
+            t = n * i;
+            document.write(i + " x " + n + " = " + t + "<br/>");
+        }
+        document.write("<hr/>");
+//-----------------------------------------------------------------
+        for(var a=1;a<=20;a++){
+            if(a%2==0){
+                document.write(a + "<br/>");
+            }
+        }
+//-----------------------------------------------------------------
+        var sum = 0;
+        for(m=1;m<=5;m++){
+            sum=sum+m;           
+        }
+        document.write("sum = " + sum + "<hr/>");
+//-----------------------------------------------------------------
+    var n = 1;
+    while(n<=15){
+        document.write(n+"<br/>");
+        n++;
+    }
+    document.write("<hr/>");
+//-----------------------------------------------------------------
+    var p = 1;
+    do{
+        document.write(p + "<br/>");
+        p++;
+    }
+    while(p<=10);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

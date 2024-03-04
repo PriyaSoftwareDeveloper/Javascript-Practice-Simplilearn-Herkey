@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //--------------------------------------------------
+        var a = "Simpli learn!!"; // global variable
+
+        function h1(){
+            console.log(a);
+        }
+        h1();
+        console.log(a);
+
+        // -------------------------------------------------
+        function f1(){
+            var aa = "Herkey - Simpli learn"; // local variable
+            console.log(aa);
+        }
+        f1();
+        //console.log(aa); // Uncaught ReferenceError: aa is not defined
+        //--------------------------------------------------
+        /*let b = "abc"; // cant redeclare let in global variable. but we can use same variable using let in different functions
+        console.log(b);
+
+        let b = "xyz";
+        */
+
+
+        function f2(){
+            let aaa = "Her key";
+            console.log(aaa);
+        }
+        f2();
+
+        //--------------------------------------------------
+        function f3(){
+            let aaa = "Simpli learn - Her key";
+            console.log(aaa);
+        }
+        f3();
+        //--------------------------------------------------
+
+        function f4(){
+            let b = "Mohana priya!";
+            console.log(b);
+        }
+
+        function f5(){
+            let a = "Los Angeles";
+            console.log(a);
+            f4();
+            function f6(){
+                console.log("f6 is printing");
+            }
+            f6();
+        }
+
+        
+        f5();
+        f6(); //Uncaught ReferenceError: f6 is not defined
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
